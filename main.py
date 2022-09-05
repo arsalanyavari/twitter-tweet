@@ -1,4 +1,4 @@
-
+from webbrowser import open as browser
 class bcolors:
     OK = '\033[92m'  # GREEN
     FAIL = '\033[91m'  # RED
@@ -11,9 +11,10 @@ def main():
                 "Enter your text please:\n>> " +
                 bcolors.RESET)
     str = convert(str)
-    print("The output is: " +
-          bcolors.OK +
-          str)
+    #print("The output is: " +
+    #      bcolors.OK +
+    #      str)
+    browser(str, autoraise=True)
 
     return 0
 
