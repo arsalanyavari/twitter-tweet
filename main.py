@@ -11,9 +11,9 @@ def main():
                 "Enter your text please:\n>> " +
                 bcolors.RESET)
     str = convert(str)
-    #print("The output is: " +
-    #      bcolors.OK +
-    #      str)
+    print("The output is: " +
+          bcolors.OK +
+          str)
     browser(str, autoraise=True)
 
     return 0
